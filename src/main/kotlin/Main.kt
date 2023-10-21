@@ -7,7 +7,13 @@ fun main(args: Array<String>) {
 
     for(i in 0..5){
         println(i)
+
     }
+
+    for(i in 1..30){
+        println((1..99).random())
+    }
+
 
 
 }
