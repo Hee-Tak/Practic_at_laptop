@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
@@ -14,6 +16,21 @@ fun main(args: Array<String>) {
         println((1..99).random())
     }
 
+    val lottoNumbers = generateLottoNumbers()
+    println("Lotto : ${lottoNumbers.sorted().joinToString(", ")} ")
 
+}
+
+fun generateLottoNumbers(): List<Int> {
+    val lottoNumbers = mutableListOf<Int>()
+    val random = Random()
+
+    while(lottoNumbers.size < 6){
+        val randomNumber = random.nextInt(45) + 1
+        if(!lottoNumbers.contains(randomNumber)){
+            lottoNumbers.add(randomNumber)
+        }
+    }
+    return lottoNumbers
 
 }
