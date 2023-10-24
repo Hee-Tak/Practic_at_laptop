@@ -21,6 +21,7 @@ fun main(args: Array<String>) {
 
 }
 
+//1~45 겹치지않게 6개택하는 로또 추첨기
 fun generateLottoNumbers(): List<Int> {
     val lottoNumbers = mutableListOf<Int>()
     val random = Random()
