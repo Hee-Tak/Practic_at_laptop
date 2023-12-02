@@ -19,6 +19,7 @@ fun main(args: Array<String>) {
     val lottoNumbers = generateLottoNumbers()
     println("Lotto : ${lottoNumbers.sorted().joinToString(", ")} ")
 
+
 }
 
 //1~45 겹치지않게 6개택하는 로또 추첨기
